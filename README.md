@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clicons Website
+
+This is the official website for showcasing the **Clicons** icon library. Clicons is a comprehensive collection of high-quality SVG icons designed for modern web applications.
+
+## Icon Library
+
+The actual Clicons icon library is hosted at [https://github.com/Trikooo/clicons](https://github.com/Trikooo/clicons). This repository contains the source icons, build scripts, and documentation for using the icons in your projects.
 
 ## Getting Started
 
-First, run the development server:
+To run this website locally and explore the icons:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Trikooo/clicons-website.git
+   cd clicons-website
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions to improve the website! Here's how you can help:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Report Issues**: If you find bugs or have suggestions for the website, please open an issue in this repository.
+- **Submit Pull Requests**: Fork the repository, make your changes, and submit a pull request.
+- **Icon Contributions**: For adding new icons or modifying existing ones, please contribute to the [Clicons library repository](https://github.com/Trikooo/clicons).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Issue Reporting
 
-## Deploy on Vercel
+- **Icon-related Issues**: If you encounter problems with the icons themselves (e.g., incorrect SVG paths, missing icons, or icon quality issues), please report them in the [Clicons library repository](https://github.com/Trikooo/clicons/issues).
+- **Website Issues**: For issues related to the website functionality, design, or user experience, please open an issue in this repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
