@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./proivders/theme-provider";
 import QueryProvider from "./proivders/query-provider";
 import { Navbar } from "@/components/navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           >
             <Navbar />
             {children}
+            <Toaster richColors position="top-right" />
           </ThemeProvider>
         </QueryProvider>
       </body>
