@@ -11,6 +11,7 @@ export async function GET() {
 
     return NextResponse.json(iconMetadata);
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ icons: [] }, { status: 500 });
   }
 }
