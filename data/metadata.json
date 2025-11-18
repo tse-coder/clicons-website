@@ -41308,6 +41308,10 @@
         "coding",
         "version control"
       ]
+    },
+    {
+      "name": "ChevronsUpDown",
+      "tags": ["expand", "unfold", "vertical"]
     }
   ]
 }
