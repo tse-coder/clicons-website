@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Copy, Tick, GithubLogo } from "clicons-react";
+import DocsTOC from "@/components/docsTOC";
 
 export default function CliconsDocs() {
   const [copied, setCopied] = useState("");
@@ -33,8 +34,19 @@ export default function CliconsDocs() {
     </div>
   );
 
+  const headings = [
+    { id: "features", text: "Features" },
+    { id: "installation", text: "Installation" },
+    { id: "quickstart", text: "Quick Start" },
+    { id: "importing-icons", text: "Importing Icons" },
+    { id: "global-defaults", text: "Global Defaults" },
+    { id: "props", text: "Icon Props" },
+    { id: "examples", text: "Examples" },
+  ];
+
   return (
     <main className="min-h-screen bg-background">
+      <DocsTOC headings={headings} />
       <div className="max-w-5xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="mb-12">
@@ -58,7 +70,7 @@ export default function CliconsDocs() {
         </div>
 
         {/* Features */}
-        <Card className="p-6 mb-8">
+        <Card className="p-6 mb-8" id="features">
           <h2 className="text-2xl font-bold mb-4">Features</h2>
           <ul className="space-y-2 text-muted-foreground">
             <li>
@@ -87,7 +99,7 @@ export default function CliconsDocs() {
         </Card>
 
         {/* Installation */}
-        <section className="mb-12">
+        <section className="mb-12" id="installation">
           <h2 className="text-3xl font-bold mb-4">Installation</h2>
           <Tabs defaultValue="npm" className="w-full">
             <TabsList>
@@ -108,7 +120,7 @@ export default function CliconsDocs() {
         </section>
 
         {/* Quick Start */}
-        <section className="mb-12">
+        <section className="mb-12" id="quickstart">
           <h2 className="text-3xl font-bold mb-4">Quick Start</h2>
           <CodeBlock
             code={`import { Loader, SearchIcon } from "clicons-react";
@@ -126,7 +138,7 @@ function App() {
         </section>
 
         {/* Importing Icons */}
-        <section className="mb-12">
+        <section className="mb-12" id="importing-icons">
           <h2 className="text-3xl font-bold mb-4">Importing Icons</h2>
           <p className="text-muted-foreground mb-4">
             Each icon can be imported either with or without the{" "}
@@ -157,7 +169,7 @@ export default function Example() {
         </section>
 
         {/* Global Defaults */}
-        <section className="mb-12">
+        <section className="mb-12" id="global-defaults">
           <h2 className="text-3xl font-bold mb-4">
             Global Defaults with Config
           </h2>
@@ -203,7 +215,7 @@ export default {
         </section>
 
         {/* Props Table */}
-        <section className="mb-12">
+        <section className="mb-12" id="props">
           <h2 className="text-3xl font-bold mb-4">Icon Props</h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
@@ -306,7 +318,7 @@ export default {
         </section>
 
         {/* Examples */}
-        <section className="mb-12">
+        <section className="mb-12" id="examples">
           <h2 className="text-3xl font-bold mb-4">Examples</h2>
 
           <h3 className="text-xl font-semibold mb-3">Basic Usage</h3>
