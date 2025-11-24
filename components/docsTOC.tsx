@@ -78,7 +78,7 @@ export default function DocsTOC({
               className={cn(
                 "block py-2 text-sm transition-colors rounded-md",
                 active === h.id
-                  ? "bg-accent/40 text-accent-foreground"
+                  ? "text-accent-foreground"
                   : "text-muted-foreground hover:bg-accent/20"
               )}
               whileHover={{ x: 4 }}
