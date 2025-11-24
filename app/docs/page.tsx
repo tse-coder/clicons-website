@@ -47,7 +47,7 @@ export default function CliconsDocs() {
   return (
     <main className="min-h-screen bg-background">
       <DocsTOC headings={headings} />
-      <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="max-w-5xl px-5 py-12 lg:mr-[18rem] md:pl-10 lg:pl-40">
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-5xl font-bold mb-4">Clicons React</h1>
