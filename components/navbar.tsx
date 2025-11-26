@@ -5,6 +5,7 @@ import * as React from "react";
 import { FaGithub } from "react-icons/fa";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { ThemeToggler } from "./ThemeToggler";
 
 const Logo = (props: React.SVGAttributes<SVGElement>) => (
   <svg
@@ -37,7 +38,7 @@ export function Navbar(props: React.HTMLAttributes<HTMLElement>) {
   return (
     <header
       className={cn(
-        "w-full border-b bg-background/95 backdrop-blur px-4 md:px-6",
+        "w-full border-b bg-background/95 backdrop-blur px-4 md:px-6 z-10 sticky top-0",
         props.className
       )}
       {...props}
@@ -60,17 +61,19 @@ export function Navbar(props: React.HTMLAttributes<HTMLElement>) {
             </a>
           </nav>
         </div>
-
-        <Button
-          variant="ghost"
-          size="icon"
-          asChild
-          href="https://github.com/trikooo/clicons"
-        >
-          <Link href="https://github.com/trikooo/clicons">
-            <FaGithub className="h-5 w-5" />
-          </Link>
-        </Button>
+        <div className="flex items-center gap-2">
+          <ThemeToggler />
+          <Button
+            variant="ghost"
+            size="icon"
+            asChild
+            href="https://github.com/trikooo/clicons"
+          >
+            <Link href="https://github.com/trikooo/clicons">
+              <FaGithub className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </header>
   );
